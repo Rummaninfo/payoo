@@ -7,8 +7,172 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-<body>
-    <h1 class="text-9xl flex justify-center items-center h-[100vh] text-red-700" >nihas ekta gay</h1>
+<body class="bg-[##f4f5f7] h-[100vh] max-w-lg  mx-auto px-3">
+    <header class="">
+        <nav class="flex justify-between items-center" >
+<!-- first -->
+ <div class="flex gap-2 items-center">
+    <img class="w-12" src="assets/Group.png" alt="">
+<div>
+ <h4>$ <span id="mainTaka" class="font-bold ">45000</span></h4> 
+ <p class="opacity-60">Available price</p>  
+</div>
+ </div>
+ <!-- 2nd -->
+  <div> 
+    
+<button class="btn opacity-60"> <i class="fa-solid fa-arrow-right-from-bracket rotate-180"></i> Logout</button>
+  </div>
+        </nav>
+    </header>
+    <hr class="opacity-60 mt-3">
+<!-- header -->
+    <main class="mt-6">
+        <!-- text section -->
+       <div class="space-y-2">
+        <h3 class="text-2xl font-bold">🔥 Welcome to Payooo!</h3>
+        <p class="opacity-65">Enjoy easy and convenient financial services with us. <br> Cashout charge is low and </p>
+       </div> 
+       <section class="mt-5" >
+         <div class="main-cart grid grid-cols-3 gap-3">
+<!-- cart 1 -->
+             <div id="add-money" class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/wallet1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Add Money</p>
+             </div>
+<!-- cart 2 -->
+             <div id="cash-out" class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/send1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Cash Out</p>
+             </div>
+<!-- cart 3 -->
+             <div class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/money1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Transfer Money</p>
+             </div>
+<!-- cart 4 -->
+             <div class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/bonus1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Get Bonus</p>
+             </div>
+<!-- cart 5 -->
+             <div class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/purse1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Pay Bill</p>
+             </div>
+<!-- cart 6 -->
+             <div class="border-1 rounded-xl p-4 text-center ">
+                <div class="flex justify-center">
+                    <img  src="assets/transaction1.png" alt="">
+                </div>
+                <p class="pt-2 opacity-65">Transaction</p>
+             </div>
+
+
+         </div>
+
+       </section>
+
+<section>
+    <!-- add money -->
+<div   id="addMoney">
+        <!-- add money -->
+ <h2 class="my-5 font-bold">Add money</h2>
+<div class="all-form-section py-7 shadow-lg p-5   ">
+    <div >
+        
+        <form class="space-y-2" >
+            <!-- 1 -->
+         <div class="space-y-1">
+            <h3 class="text-sm font-semibold">Select A Bank</h3>
+           <select id="bankSelect" class="select w-full rounded-3xl">
+  <option disabled selected>Select a back</option>
+  <option>Crimson</option>
+  <option>DDBL</option>
+  <option>Sonali Bank</option>
+  
+</select>
+         </div>
+         <!-- 2 -->
+          <div class="space-y-1" >
+            <h3 class="text-sm font-semibold">Bank Account Number</h3>
+            <input id="accNumber" type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+         <!-- 3 -->
+          <div class="space-y-1">
+            <h3 class="text-sm font-semibold">Amount to Add</h3>
+            <input id="amountAdded" type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+     
+         <!-- 2 -->
+          <div class="space-y-1">
+            <h3 class="text-sm font-semibold">Pin Number</h3>
+            <input id="pinNum"  type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+            
+          <button type="button" id="addMoney" class="btn btn-primary w-full rounded-3xl">Add Money</button>
+
+
+        </form>
+    </div>
+
+</div>
+</div>
+
+<!-- cash out -->
+<div style="display: none;" id="cashout" >
+    <div id="addMoney">
+        
+ <h2 class="my-5 font-bold">Cash Out</h2>
+<div class="all-form-section py-7 shadow-lg p-5   ">
+    <div >
+        
+        <form class="space-y-3" >
+
+         <!-- 2 -->
+          <div class="space-y-2" >
+            <h3 class="text-sm font-semibold">Bank Account Number</h3>
+            <input id="cashout-account-number" type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+         <!-- 3 -->
+          <div class="space-y-2">
+            <h3 class="text-sm font-semibold">Amount to Add</h3>
+            <input id="cashout-amount" type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+     
+         <!-- 2 -->
+          <div class="space-y-2">
+            <h3 class="text-sm font-semibold">Pin Number</h3>
+            <input id="cash-out-pin"  type="text" placeholder="Type here" class="input w-full rounded-3xl" />
+          </div>   
+            
+          <button type="button" id="cashout-btn" class="btn btn-primary w-full rounded-3xl">Withdraw Money</button>
+
+
+        </form>
+    </div>
+
+</div>
+</div>
+</div>
+
+
+</section>
+
+    </main>
+    <script src="main.js"></script>
 </body>
+
 </html>
